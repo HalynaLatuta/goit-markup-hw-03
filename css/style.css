@@ -1,0 +1,261 @@
+
+/*основний колір тексту #212121 */
+/*другорядний колір #757575 */
+/* колір лого #000000 #2196F3 */
+/* колірховеру #2196F3 */
+/* color page background: #F5F5F5; */
+/* background: #F5F4FA; фон наша команда */
+
+:root {
+  --primary-text-color: #212121;
+  --secont-text-color: #757575;
+  --primary-bg-color: #FFFFFF;
+  --secondary-bg-color: #2F303A;
+  --color-button-accent:#2196F3;
+  --color-secondary:#F5F4FA;
+  --color-text-white:#FFFFFF;
+ 
+}
+body {
+  background-color: var(--primary-bg-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* style logo */
+.logo {
+  color: var(--color-button-accent);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.logo-last-part {
+  color: #000000;
+}
+
+/*відміняємо маркування списку*/
+ul {
+  list-style: none;
+}
+
+/*header*/
+.site-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.header-link {
+  color: var(--secont-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.header .link:hover,
+.header .link:focus {
+  color: var(--color-button-accent);
+}
+
+.link.current {
+  color: var(--color-button-accent);
+}
+
+.hat {
+  background-color: var(--secondary-bg-color);
+}
+/*кнопки*/
+/*внопка на сторінці студія*/
+
+.button-hat {
+  background-color: #2196F3;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-text-white);
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button-hat:hover,
+.button-hat:focus {
+  background-color: #188CE8; 
+  color: var(--color-text-white);
+}
+
+/*кнопки на сторінці портфоліо*/
+.button-portfolio {
+  color: var(--primary-text-color);
+  background-color: var(--color-secondary);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: var(--color-text-white);
+  background-color: var(--color-button-accent);
+}
+
+/*стилізація секцій*/
+
+.section-title-big{
+  color: var(--color-text-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/*стилізація about futures*/
+
+.title-none {
+  display: none;
+}
+
+.feature-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.text-features {
+  color: var(--secont-text-color);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.wedo-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*стилізацція our team*/
+
+.section-team {
+  background-color: var(--color-secondary);
+}
+
+.our-team-list {
+  background-color: var(--color-text-white);
+}
+
+.team-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.position {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/*стилізація портфоліо*/
+.photo-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.filtr-portfolio {
+  color: var(--secont-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  letter-spacing: 0.03em;
+}
+
+.title-list-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+  
+  letter-spacing: 0.06em;
+}
+
+/*стилізація footer*/
+.adress-footer {
+  color: var(--color-text-white); 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+}
+
+.footer-all {
+  background-color: var(--secondary-bg-color);
+}
+
+.logo-footer-part {
+  color: var(--color-text-white);
+}
+
+.adress-footer:hover 
+.adress-footer:focus {
+  color: var(--color-button-accent);
+}
+
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--color-button-accent);
